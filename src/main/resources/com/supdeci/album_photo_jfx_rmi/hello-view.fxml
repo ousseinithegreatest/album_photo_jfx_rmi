@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.supdeci.album_photo_jfx_rmi.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="729.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="602.0" prefWidth="364.0" style="-fx-background-color: #388659;">
+         <children>
+            <Text fill="WHITE" layoutX="55.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENUE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="48.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ici, créer un album photo devient un art">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#388659" layoutX="443.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONNEXION">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <TextField id="txtEmail" layoutX="421.0" layoutY="273.0" prefHeight="25.0" prefWidth="249.0" promptText="Email" />
+      <TextField id="txtMdp" layoutX="421.0" layoutY="308.0" prefHeight="25.0" prefWidth="249.0" promptText="Mot de passe" />
+      <Button layoutX="460.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #388659;" text="Se connecter" textFill="WHITE" />
+      <Text fill="#388659" layoutX="495.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscrivez-vous">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
